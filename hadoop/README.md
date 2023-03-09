@@ -24,10 +24,10 @@
 - ubuntu passwd
     - Ubuntu Account Password Settings
 
-### ❗****Caution****❗
-
-1. Proceed on **all DataNode’s** unconditionally changing public key authentication to password-based authentication
-2. **All DataNode’s** ubuntu account set passwords
+> ### ❗****Caution****❗
+>
+> 1. Proceed on **all DataNode’s** unconditionally changing public key authentication to password-based authentication
+> 2. **All DataNode’s** ubuntu account set passwords
 
 ### ▶**Execute**
 
@@ -59,13 +59,13 @@ Input the Ubuntu password you want `ex. ubuntu`
 1. DataNode's ubuntu account **password is not `ubuntu`**
 2. DataNode's ubuntu account **password is `ubuntu`**
 
-### ❗****Caution****❗
-
-1. When executing the account password ubuntu, the password for **all DataNodes must be `ubuntu`.**
-    - If even one node is different, that node cannot be connected
-2. **The order** in which the ip addresses are inputed is important
-    - You have to **start with NameNode.**
-    - You don't have to input the password after NameNode.
+> ### ❗****Caution****❗
+> 
+> 1. When executing the account password ubuntu, the password for **all DataNodes must be `ubuntu`.**
+>     - If even one node is different, that node cannot be connected
+> 2. **The order** in which the ip addresses are inputed is important
+>     - You have to **start with NameNode.**
+>     - You don't have to input the password after NameNode.
 
 ### ▶**Execute**
 

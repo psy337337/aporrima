@@ -111,7 +111,8 @@ You just have to enter the following command in NameNode’s hadoop account
     
 # How to add DataNode
 
-Use when you want to **add Datanode after installation**
+Use when you want to **add Datanode after installation**  
+**Only one Datanode** can be added per execute
 
 > ### **❗Caution❗**
 > 

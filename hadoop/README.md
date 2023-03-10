@@ -106,4 +106,42 @@ You just have to enter the following command in NameNode’s hadoop account
 
 `./hadoop/sbin/start-dfs.sh`
 
-`./hadoop/sbin/start-yarn.sh`
+`./hadoop/sbin/start-yarn.sh`  
+  
+    
+# How to add DataNode
+
+Use when you want to **add Datanode after installation**
+
+> ### **❗Caution❗**
+> 
+> 1. The hadoop installation must have been **successful**.
+> 2. Must proceed from **ubuntu account**
+> 3. **DataNode preset** required
+
+### ****▶Execute****
+
+1. **DataNode preset**
+
+🔹DataNode
+
+```
+sudo sed -i "/PasswordAuthentication/ c\PasswordAuthentication yes" /etc/ssh/sshd_config
+sudo systemctl restart sshd
+
+sudo passwd ubuntu
+```
+
+2. **Proceed from NameNode's ubuntu account**
+
+🔹General Example
+
+```
+./aporrima/hadoop/addDataNode.sh (DataNode's ip address) (DataNode's ubuntu passwd)
+```
+
+🔹Real Example
+
+```
+./aporrima/hadoop/addDataNode.sh 10.0.20.180 ubuntu
+```
